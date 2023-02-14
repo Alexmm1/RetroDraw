@@ -11,7 +11,7 @@ import React from 'react';
  */
 const Cell = (props) => {
  
-  return <div className="cell {props.isActive}" >{props.isActive ? props.color: null}</div>
+  return <div className={`cell ${props.isActive? props.color : null}`} ></div>
 }
 
 export default Cell;
