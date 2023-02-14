@@ -12,10 +12,14 @@ import React from 'react';
 const Cell = (props) => {
 const color = props.color
 const isActive = props.isActive
+const handleClick = ()=>{
+  props.handleClick(color)
+}
 
  
   return <div style={{backgroundColor: color}}
-  className={isActive ? "cell active" : "cell"}></div>
+  className={isActive ? "cell active" : "cell"}
+  onClick={handleClick}></div>
 }
 
 export default Cell;
