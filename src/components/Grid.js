@@ -35,7 +35,6 @@ const Grid = (props) => {
               const newCellList = [...cellList];
               newCellList[idx].color = activeColor
               setCellList(newCellList)
-
             }}
             key={`grid: ${idx}`}
           />
