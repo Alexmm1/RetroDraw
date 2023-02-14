@@ -10,18 +10,8 @@ import React from 'react';
  * - handleClick, which will be a function to run when the cell has been clicked on 
  */
 const Cell = (props) => {
-  /* Create constants for color, isActive, and handleClick, reading the value off of props */
-
-  /**
-   * For the template you need to
-   * - set the className to be "cell active" if the value of isActive
-   *    is true
-   * - set the style property on the div to have backgroundColor equal to the 
-   *    color string passed in with the props
-   * - set the onClick property to be equal to the handleClick function
-   *    passed in with the props
-   */
-  return <div className="cell"></div>
+ 
+  return <div className="cell {props.isActive}" >{props.isActive ? props.color: null}</div>
 }
 
 export default Cell;
