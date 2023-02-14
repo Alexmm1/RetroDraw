@@ -14,7 +14,8 @@ const color = props.color
 const isActive = props.isActive
 
  
-  return <div style={{backgroundColor: color}}className={`cell ${props.isActive? 'active' : ''}`}></div>
+  return <div style={{backgroundColor: color}}
+  className={isActive ? "cell active" : "cell"}></div>
 }
 
 export default Cell;
